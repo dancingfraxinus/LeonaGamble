@@ -85,3 +85,10 @@ return 9999;
 add_filter( 'et_pb_gallery_image_width', 'gallery_image_width' );
 add_filter( 'et_pb_gallery_image_height', 'gallery_image_height' );
 // End remove Divi Gallery Module image crop
+
+//Woo Commerce Stylesheet ON/OFF
+//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+//Use When Needed:
+//remove_action('shutdown', 'wp_ob_end_flush_all', 1);  //Flush error 
+flush_rewrite_rules(); //Flush Rules
